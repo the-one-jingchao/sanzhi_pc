@@ -52,6 +52,36 @@
                 </div>
             </div>
         </div>
+        <div class="t-section">
+            <div class="t-title">三智四大服务</div>
+            <div class="t-serve">
+                <div v-for="item in serve" :key="item.title" class="t-s-card">
+                    <div class="t-s-img"><img :src="item.src" alt=""></div>
+                    <div class="t-s-title">{{item.title}}</div>
+                    <div class="t-s-desc">{{item.desc}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="t-section bg3">
+            <div class="t-title">关于我们</div>
+            <div class="t-us">
+                <div class="t-us-f f2">
+                    <div class="t-us-label">构建孩子驾驭未来的思维能力 <span class="line"></span></div>
+                    <div class="t-us-label">
+                        三智在线，由资深IT教育专家创立，获得赛伯乐合伙人、多融创投及涌铧投资(涌金集团直属投资机构)的雄厚资本支持。引进欧美先进教育理念和课程平台，致力于成为卓越的青少年科技教育机构。小码王立足于少儿编程培训，给孩子一个新的思考方式，让儿童与世界同步！
+                        <span class="line"></span>
+                    </div>
+                    <div class="t-us-label">
+                        成立至今，已有八十余家旗舰校区覆盖北京、上海、杭州、广州、深圳等全国十多个重点城市。整合全国优秀的编程教育专家、研究者和实践专家，提供孩子综合素质和学习能力培养的解决方案，让少年掌握人工智能时代必备编程技能，成就不一样的未来。
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="t-us-f">
+                    <div class="l-us-title">北京三智在线科技有限公司</div>
+                    <div class="l-us-tel">地址：北京市大兴区大东工业园</div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -112,7 +142,29 @@
                             get: '信息奥赛重难点攻破 <br> 培养进阶数学思维 <br> 集中训练高级程序算法 <br>  应用算法拆分解决数理问题',
                         }
                     ]
-                }
+                },
+                serve: [
+                    {
+                        src: require('./images/promise01.png'),
+                        title: '教学',
+                        desc: '为孩子量身制定学习计划，8-12人小班制教学'
+                    },
+                    {
+                        src: require('./images/promise02.png'),
+                        title: '师资',
+                        desc: '师资团队教学经验丰富'
+                    },
+                    {
+                        src: require('./images/promise03.png'),
+                        title: '服务',
+                        desc: '定期反馈孩子学习进度，让家长更有效的了解情况'
+                    },
+                    {
+                        src: require('./images/promise04.png'),
+                        title: '退款',
+                        desc: '学习不满意可申请退款'
+                    },
+                ]
             }
         }
     }

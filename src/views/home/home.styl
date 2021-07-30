@@ -20,6 +20,14 @@
     &.bg1
       background: #fff9f5
       border-radius 20px
+    &.bg2
+      background: #f5f5f5;
+      border-radius 20px
+    &.bg3
+      background: #ffb850;
+      border-radius 20px
+      color #FFFFFF;
+
 
     .t-title
       text-align center;
@@ -138,4 +146,85 @@
         &.bg
           background: #feeed5;
 
+
+
+    .t-serve
+      width: 100%;
+      box-sizing border-box;
+      padding 60px 0 0 0;
+      display flex
+      flex-wrap wrap;
+      flex-direction row
+      justify-content space-between;
+      .t-s-card
+        width: 240px
+        height: auto
+        text-align center;
+        box-sizing border-box;
+        box-shadow 0 0 4px 1px rgba(188, 187, 187, 0.5);
+        padding 40px 20px;
+        cursor pointer;
+        transition all .35s;
+        border-radius 14px;
+        &:hover
+          transform scale(1.1);
+          box-shadow 0 0 4px 1px rgba(188, 187, 187, 0.9);
+        .t-s-img
+          text-align center
+          height: 80px
+          img
+            width: 80px
+            height: 80px
+        .t-s-title
+          font-weight bold
+          font-size 24px
+          box-sizing border-box;
+          padding 40px 0 20px 0;
+        .t-s-desc
+          text-align left
+          word-break break-all
+          white-space normal
+          font-size 18px;
+          color #535353
+
+
+    .t-us
+      width: 100%
+      box-sizing border-box;
+      position relative;
+      padding 40px;
+      display flex;
+      flex-direction row
+      .t-us-f
+        flex 2;
+        box-sizing border-box
+        position relative
+        &.f2
+          flex 3
+        .t-us-label
+          position relative
+          font-size 18px;
+          box-sizing border-box
+          padding 10px 0
+          color #fafafa
+          .line
+            display inline-block;
+            position absolute
+            width: 60px;
+            height: 3px
+            border-radius 2px;
+            background: #fc7e23;
+            bottom: -4px
+            left: 0
+        .l-us-title
+          font-size 28px;
+          text-align center
+          font-weight bold
+          box-sizing border-box
+          padding 80px 0 40px 0;
+          color #FFFFFF
+        .l-us-tel
+          font-size 18px;
+          color #FFFFFF
+          text-align center;
 

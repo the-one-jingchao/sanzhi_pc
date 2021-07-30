@@ -13,9 +13,9 @@
             <THeader />
         </div>
         <div class="t-layout">
-<!--            <div class="t-layout-swiper">-->
-<!--                <TSwiper />-->
-<!--            </div>-->
+            <div class="t-layout-swiper">
+                <TSwiper />
+            </div>
             <div class="t-layout-container">
                 <router-view/>
             </div>
@@ -25,12 +25,12 @@
 
 <script>
     import THeader from '@components/t-header/t-header';
-    // import TSwiper from '@components/t-swiper/t-swiper';
+    import TSwiper from '@components/t-swiper/t-swiper';
     export default {
         name: "layout",
         components:{
             THeader,
-            // TSwiper,
+            TSwiper,
         },
     }
 </script>

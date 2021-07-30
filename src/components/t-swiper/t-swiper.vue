@@ -1,15 +1,12 @@
 <template>
 <!--    <el-carousel :interval="options.interval * 1000" :type="options.type" :height="`${options.height}px`">-->
-    <el-carousel :interval="4000" height="600px">
-<!--        <el-carousel-item v-for="(item, idx) in list" :key="idx">-->
-<!--            <img class="img" :src="item.src" alt="">-->3
-<!--        </el-carousel-item>-->
-        <el-carousel-item >
-            <img class="img" src="./images/7.JPG" alt="">
-        </el-carousel-item>
-        <el-carousel-item >
-            <img class="img" src="./images/9.JPG" alt="">
-        </el-carousel-item>
+    <el-carousel :interval="2000" height="600px">
+       <el-carousel-item v-for="(item, idx) in list" :key="idx">
+           <img class="img" :src="item.src"
+                onselectstart="return false;"
+                oncontextmenu="return false;"
+                alt="">
+       </el-carousel-item>
     </el-carousel>
 </template>
 
@@ -32,10 +29,16 @@
             return{
                 list: [
                     {
-                        src: ('./images/7.JPG'),
+                        src: require('./images/s1.jpeg'),
                     },
                     {
-                        src: ('./images/9.JPG'),
+                        src: require('./images/s2.jpeg'),
+                    },
+                    {
+                        src: require('./images/s3.jpeg'),
+                    },
+                    {
+                        src: require('./images/s4.jpeg'),
                     }
                 ],
             }

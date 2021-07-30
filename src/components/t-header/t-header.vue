@@ -9,7 +9,7 @@
 <template>
     <div class="t-header-section">
 
-        <span>北京三智在线科技有限公司</span>
+        <span class="text">北京三智在线科技有限公司</span>
 
     </div>
 </template>
