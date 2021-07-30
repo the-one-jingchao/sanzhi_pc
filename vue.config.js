@@ -1,7 +1,8 @@
 const path = require('path')
 const resolve = (dir) => path.join(__dirname, dir)
 module.exports = {
-    filenameHashing: true,
+    filenameHashing: false,
+    publicPath: './',
     devServer: {
         port: 7789,
         // proxy: {
@@ -16,6 +17,13 @@ module.exports = {
     },
     chainWebpack: (config) => {
         config.resolve.symlinks(true)
+
+        config.module
+            .rule('images')
+            .use('url-loader')
+            .loader('url-loader')
+            .tap(options => Object.assign(options, { limit: 2000, esModule: false }));
+
 
         config.resolve.alias
             .set('@', resolve('src'))
