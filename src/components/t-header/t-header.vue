@@ -24,7 +24,7 @@
         name: "t-header",
         methods:{
             openLink(){
-                window.open('https://scratchlesson.com/download', '_blank');
+                window.open('http://sanzhi.com/download/Scratch_3.5.1.exe', '_blank');
             },
         }
     }
