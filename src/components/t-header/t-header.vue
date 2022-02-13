@@ -11,12 +11,22 @@
 
         <span class="text">北京三智在线科技有限公司</span>
 
+        <span @click="openLink" class="t-scratch">
+          <i class="iconfont icon-ruanjianxiazai-ruanjianliebiao"></i>
+          Scratch
+        </span>
+
     </div>
 </template>
 
 <script>
     export default {
-        name: "t-header"
+        name: "t-header",
+        methods:{
+            openLink(){
+                window.open('https://scratchlesson.com/download', '_blank');
+            },
+        }
     }
 </script>
 
